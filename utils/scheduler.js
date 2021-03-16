@@ -308,9 +308,9 @@ let scheduler = {
                         if (task.waitTime) {
                             //console.info('延迟执行', task.taskName, task.waitTime, 'seconds')
                             //await new Promise((resolve, reject) => setTimeout(resolve, task.waitTime * 1000))
-                            // 所有单元延时统一为20s
-                            console.info('延迟执行', task.taskName, 20, 'seconds')
-                            await new Promise((resolve, reject) => setTimeout(resolve, 20000))
+                            // 所有单元延时统一为30s
+                            console.info('延迟执行', task.taskName, 30, 'seconds')
+                            await new Promise((resolve, reject) => setTimeout(resolve, 30000))
                         }
 
                         let ttt = tasks[task.taskName]
