@@ -82,4 +82,4 @@ jobs:
         appid: ${{secrets.unicom_appid}}
         notify_tele_bottoken: ${{secrets.tele_bot_token}}
         notify_tele_chatid: ${{secrets.tele_chat_id}}
-      run: node index.js unicom --user=${user} --password=${password} --appid=${appid}
+      run: node index.js unicom --user=${user} --password=${password} --appid=${appid} --notify_tele_bottoken=${notify_tele_bottoken} --notify_tele_chatid=${notify_tele_chatid}
