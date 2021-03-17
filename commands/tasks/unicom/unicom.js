@@ -24,11 +24,11 @@ var start = async (params) => {
     await require('./integral').addFlow(request, options)
   }, taskOption)
 
-//   // 冬奥积分活动 20201231
-//   await scheduler.regTask('winterTwo', async (request) => {
-//     await require('./integral').winterTwoGetIntegral(request, options)
-//     await require('./integral').winterTwoStatus(request, options)
-//   }, taskOption)
+  // 冬奥积分活动 20201231
+  await scheduler.regTask('winterTwo', async (request) => {
+    await require('./integral').winterTwoGetIntegral(request, options)
+    await require('./integral').winterTwoStatus(request, options)
+  }, taskOption)
 
 //   // 每日定向积分 20201231
 //   await scheduler.regTask('dxIntegralEveryDay', async (request) => {
