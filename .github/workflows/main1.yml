@@ -7,7 +7,7 @@ on:
     branches: [ main ]
   workflow_dispatch: # 手动触发
   schedule: # 计划任务触发
-    - cron: '14 0,7 * * *' # cron表达式，Actions时区是UTC时间
+    - cron: '46 1,5 * * *' # cron表达式，Actions时区是UTC时间，每天9:46,13:46各运行一次
     
 
 jobs:
