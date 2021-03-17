@@ -1,4 +1,4 @@
-name: daily-tasks
+name: daily-tasks-main
 
 on:
   
@@ -109,7 +109,7 @@ jobs:
         user: ${{secrets.unicom_user}}
         password: ${{secrets.unicom_password}}
         appid: ${{secrets.unicom_appid}}
-      run: node index.js unicom --user=${user} --password=${password} --appid=${appid} ----tryrun
+      run: node index.js unicom --user=${user} --password=${password} --appid=${appid}
 
     # 运行 unicom 签到任务1
     - name: Run unicom daily task1
@@ -118,7 +118,7 @@ jobs:
         user: ${{secrets.unicom_user1}}
         password: ${{secrets.unicom_password1}}
         appid: ${{secrets.unicom_appid}}
-      run: node index.js unicom --user=${user} --password=${password} --appid=${appid} ----tryrun
+      run: node index.js unicom --user=${user} --password=${password} --appid=${appid}
       
     # 运行 unicom 签到任务2
     - name: Run unicom daily task2
@@ -127,7 +127,7 @@ jobs:
         user: ${{secrets.unicom_user2}}
         password: ${{secrets.unicom_password2}}
         appid: ${{secrets.unicom_appid}}
-      run: node index.js unicom --user=${user} --password=${password} --appid=${appid} ----tryrun
+      run: node index.js unicom --user=${user} --password=${password} --appid=${appid}
             
     # 运行 unicom 签到任务3
     - name: Run unicom daily task3
@@ -136,4 +136,4 @@ jobs:
         user: ${{secrets.unicom_user3}}
         password: ${{secrets.unicom_password3}}
         appid: ${{secrets.unicom_appid}}
-      run: node index.js unicom --user=${user} --password=${password} --appid=${appid} ----tryrun
+      run: node index.js unicom --user=${user} --password=${password} --appid=${appid}
