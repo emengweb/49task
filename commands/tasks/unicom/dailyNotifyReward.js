@@ -8,8 +8,6 @@ var dailyNotifyReward = {
             for (let type in taskJson.rewards) {
                 console.notify(`\t`, type, taskJson.rewards[type])
             }
-            //发送信息统计推送
-            console.sendLog()
         }
     }
 }
