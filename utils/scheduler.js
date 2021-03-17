@@ -69,8 +69,8 @@ let scheduler = {
         for (let taskName of taskNames) {
             let options = tasks[taskName].options || {}
             let willTime = moment(randomDate(options));
-            // 任务的随机延迟时间，最大210s
-            let waitTime = options.dev ? 0 : Math.floor(Math.random() * (options.waitTime || 210))
+            // 任务的随机延迟时间，最大140s
+            let waitTime = options.dev ? 0 : Math.floor(Math.random() * (options.waitTime || 140))
             if (options) {
                 if (options.isCircle || options.dev) {
                     willTime = moment().startOf('days');
